@@ -3,14 +3,15 @@ from django.http import HttpResponse
 
 def vision(request):
     vision = " \
+    <img src='https://mseuf.edu.ph/web4_assets/mini/logo/ccmslogo.webp'> \
     <h1 style = 'color: maroon; font-family: Arial'> \
     CCMS Vision \
     </h1> \
     \
-    <h3 style = 'font-family: Arial'> \
+    <h4 style = 'font-family: Arial'> \
     The College of Computing and Multimedia Studies shall be a center \
     of excellence in delivering Computing and Multimedia education. \
-    </h3> \
+    </h4> \
     "
     return HttpResponse(vision)
 
@@ -20,14 +21,13 @@ def mission(request):
     CCMS Mission \
     </h1> \
     \
-    <h3 style = 'font-family: Arial'> \
+    <h4 style = 'font-family: Arial'> \
     The College of Computing and Multimedia Studies shall produce competent and innovative professionals or \
         Technopreneurs in the Information and Communication Technology (ICT) industry adequately \
     prepared in the practice of their profession supportive of national development goals and standards of global excellence.\
-    </h3> \
+    </h4> \
     "
     return HttpResponse(mission)
-
 
 def objectives(request):
     objectives = " \
@@ -35,7 +35,7 @@ def objectives(request):
     CCMS Vision \
     </h1> \
     \
-    <h3 style = 'font-family: Arial'> \
+    <h4 style = 'font-family: Arial'> \
     1. Increase faculty performance by obtaining a minimum rating of 4.00 in the semestral faculty \
     evaluation of each faculty for the next fiveyears. <br> <br> \
     \
@@ -54,6 +54,6 @@ def objectives(request):
     \
     6. Strengthen promotion program to increase freshman enrollees to a minimum of three (3) class sections \
     annually for the next five years. \
-    </h3> \
+    </h4> \
     "
     return HttpResponse(objectives)
